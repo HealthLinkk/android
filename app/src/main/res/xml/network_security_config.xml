@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <!-- Specify trust anchors (root certificates) for secure connections -->
+            <!-- For example, you can include the system's default root certificates -->
+            <certificates src="system" />
+        </trust-anchors>
+        <debug-overrides>
+            <!-- Log network traffic that matches this domain -->
+            <domain includeSubdomains="true">127.0.0.1</domain>
+        </debug-overrides>
+    </base-config>
+</network-security-config>

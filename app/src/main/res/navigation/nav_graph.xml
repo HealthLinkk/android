@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/item_home">
+
+    <fragment
+        android:id="@+id/item_home"
+        android:name="com.esprit.healthlink.ui.fragments.HomeFragment"
+
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_item_home_to_doctorsFragment"
+            app:destination="@id/doctorsFragment"
+            app:popUpTo="@id/item_home"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/item_profile"
+        android:name="com.esprit.healthlink.ui.fragments.ProfileFragment"
+
+        tools:layout="@layout/fragment_profile"/>
+    <fragment
+        android:id="@+id/doctorsFragment"
+        android:name="com.esprit.healthlink.ui.fragments.DoctorsFragment"
+
+        tools:layout="@layout/fragment_doctors"/>
+</navigation>

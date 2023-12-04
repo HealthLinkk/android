@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <data>
+        <variable
+            name="DoctorData"
+            type="com.esprit.healthlink.data.model.Doctor" />
+    </data>
+
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearCardDoctor"
+            android:layout_height="150dp"
+            android:layout_marginBottom="@dimen/_481pxv"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_161pxv"
+            android:layout_width="377dp"
+            android:orientation="horizontal" style="@style/groupStylewhite_1">
+            <ImageView android:id="@+id/imageImage"
+                android:layout_height="@dimen/_110pxh"
+                android:layout_marginBottom="@dimen/_8pxv"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="@dimen/_110pxh"
+                android:scaleType="fitXY"
+
+              android:src="@drawable/img_image_110x110"/>
+
+            <LinearLayout
+                android:id="@+id/linearCardcontent"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:layout_marginEnd="@dimen/_8pxh"
+                android:layout_marginBottom="@dimen/_28pxv"
+                android:layout_weight="0.65"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtDrRandyWigha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text='@{DoctorData.name}' />
+
+                <LinearLayout
+                    android:id="@+id/linearRowgeneral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:gravity="start"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtGeneral"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.27"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.01"
+                        android:singleLine="true"
+                        android:text="@string/lbl_generaliste" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+</layout>

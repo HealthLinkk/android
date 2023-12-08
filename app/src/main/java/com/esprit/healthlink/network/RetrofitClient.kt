@@ -11,7 +11,7 @@ class RetrofitClient {
 
         fun getRetrofitInstance(): Retrofit {
 
-            val baseUrl = "http://192.168.1.13:35873/"
+            val baseUrl = "http://172.26.96.1:54234/"
 
                 return Retrofit.Builder()
                     .baseUrl(baseUrl)

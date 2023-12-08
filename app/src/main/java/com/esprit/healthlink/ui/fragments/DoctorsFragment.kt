@@ -62,6 +62,8 @@ class DoctorsFragment : Fragment() {
             adapter = doctorsViewModel.getAdapter() // Set the adapter here
             val decoration = DividerItemDecoration(requireContext(), LinearLayoutManager.VERTICAL)
             addItemDecoration(decoration)
+
+            
         }
 
         initObserver()

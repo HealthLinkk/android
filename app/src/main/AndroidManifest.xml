@@ -39,6 +39,9 @@
             android:exported="false" />
         <activity android:name=".ui.ProfileEditActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.AppointmentsActivity"
+            android:exported="false" />
 
     </application>
 

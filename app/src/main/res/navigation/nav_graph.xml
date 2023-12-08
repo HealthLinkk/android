@@ -25,5 +25,20 @@
         android:id="@+id/doctorsFragment"
         android:name="com.esprit.healthlink.ui.fragments.DoctorsFragment"
 
-        tools:layout="@layout/fragment_doctors"/>
+        tools:layout="@layout/fragment_doctors">
+        <action
+            android:id="@+id/action_doctorsFragment_to_doctorDetailsFragment"
+            app:destination="@id/doctorDetailsFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/doctorDetailsFragment"
+        android:name="ui.fragments.DoctorDetailsFragment"
+        android:label="DoctorDetailsFragment">
+
+        <!-- Define any additional configuration for DoctorDetailsFragment -->
+
+    </fragment>
+
 </navigation>

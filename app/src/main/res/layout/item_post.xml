@@ -32,6 +32,13 @@
             android:layout_marginBottom="@dimen/_8pxv"
             android:gravity="start"
             android:orientation="vertical">
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="59dp"
+                android:layout_height="44dp"
+                android:src="@drawable/ic_profile"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textTitle"
@@ -49,6 +56,16 @@
                 android:text="@{postData.content}"
                 android:ellipsize="end"
                 android:singleLine="true" />
+            <ImageButton
+                android:id="@+id/comment"
+                android:layout_width="59dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="4dp"
+
+                android:src="@drawable/comments"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
         </LinearLayout>
     </LinearLayout>
 </layout>

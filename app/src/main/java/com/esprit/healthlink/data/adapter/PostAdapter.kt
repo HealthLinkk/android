@@ -4,7 +4,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.esprit.healthlink.data.model.Post
-import com.esprit.healthlink.databinding.FragmentItemPostBinding
+
+import com.esprit.healthlink.databinding.FragmentPostsBinding
 import com.esprit.healthlink.databinding.ItemPostBinding
 
 // PostAdapter.kt
@@ -18,7 +19,7 @@ class PostAdapter : RecyclerView.Adapter<PostAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
-        val binding = FragmentItemPostBinding.inflate(inflater, parent, false)
+        val binding = ItemPostBinding.inflate(inflater, parent, false)
         return ViewHolder(binding)
     }
 
@@ -30,9 +31,9 @@ class PostAdapter : RecyclerView.Adapter<PostAdapter.ViewHolder>() {
         holder.bind(items[position])
     }
 
-    class ViewHolder(private val binding: FragmentItemPostBinding) : RecyclerView.ViewHolder(binding.root) {
+    class ViewHolder(private val binding: ItemPostBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(post: Post) {
-            binding.post = post
+            binding.postData= post
             binding.executePendingBindings()
         }
     }

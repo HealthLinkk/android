@@ -87,6 +87,11 @@ val author = "6557c2113e63a3bf823316e3"
         return dataAdapter
     }
 
+    fun setAdapterData(data : ArrayList<Post>){
+        dataAdapter.setData(data)
+        dataAdapter.notifyDataSetChanged()
+    }
+
     fun makeApiCall() {
         repository.getPosts().enqueue(object : Callback<List<Post>> {
             override fun onFailure(call: Call<List<Post>>, t: Throwable) {

@@ -11,7 +11,7 @@ class RetrofitClient {
 
         fun getRetrofitInstance(): Retrofit {
 
-            val baseUrl = "http://10.0.2.2:50696/"
+            val baseUrl = "https://healthlink.onrender.com"
 
                 return Retrofit.Builder()
                     .baseUrl(baseUrl)

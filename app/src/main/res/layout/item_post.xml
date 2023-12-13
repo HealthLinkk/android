@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="postData"
+            type="com.esprit.healthlink.data.model.Post" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/linearCardPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10pxh"
+        android:layout_marginTop="@dimen/_10pxv"
+        android:layout_marginEnd="@dimen/_10pxh"
+        android:layout_marginBottom="@dimen/_10pxv"
+        android:orientation="horizontal"
+        style="@style/groupStylewhite_1">
+
+
+
+        <LinearLayout
+            android:id="@+id/linearCardcontent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_marginEnd="@dimen/_8pxh"
+            android:layout_marginBottom="@dimen/_8pxv"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{postData.title}"
+                android:ellipsize="end"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/textContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:text="@{postData.content}"
+                android:ellipsize="end"
+                android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

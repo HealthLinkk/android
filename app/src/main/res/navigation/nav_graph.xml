@@ -26,4 +26,8 @@
         android:name="com.esprit.healthlink.ui.fragments.DoctorsFragment"
 
         tools:layout="@layout/fragment_doctors"/>
+    <fragment
+        android:id="@+id/postAddFragment"
+        android:name="com.esprit.healthlink.ui.fragments.PostFragment"
+       tools:layout="@layout/fragment_item_post" />
 </navigation>

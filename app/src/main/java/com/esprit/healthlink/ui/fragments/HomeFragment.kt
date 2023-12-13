@@ -30,6 +30,13 @@ class HomeFragment : Fragment() {
                 })
             })
         }
+        binding.btnIconOne.setOnClickListener {
+            findNavController().navigate(R.id.postAddFragment,null, navOptions {
+                popUpTo(R.id.item_home, popUpToBuilder = {
+                    inclusive = true
+                })
+            })
+        }
 
         return binding.root
     }

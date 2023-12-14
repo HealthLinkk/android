@@ -3,6 +3,7 @@ package tn.pdm.RecycleConnect.data.api
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import tn.pdm.RecycleConnect.data.models.MedicalRecord
+import tn.pdm.RecycleConnect.data.repositories.MedicationRepository
 
 object RetrofitInstance {
 
@@ -24,5 +25,8 @@ object RetrofitInstance {
     }
     val apimedicalrecord: MedicalRecordApiService by lazy {
         retrofit.create(MedicalRecordApiService::class.java)
+    }
+    val apiMedication: MedicationRepository.ApiMedication by lazy {
+        retrofit.create(MedicationRepository.ApiMedication::class.java)
     }
 }

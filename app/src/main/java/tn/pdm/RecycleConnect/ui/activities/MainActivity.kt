@@ -1,5 +1,6 @@
 package tn.pdm.RecycleConnect.ui.activities
 
+import MedicationFragment
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -7,9 +8,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import tn.pdm.RecycleConnect.R
-import tn.pdm.RecycleConnect.data.repositories.NewsRepository
-import tn.pdm.RecycleConnect.data.viewmodels.NewsViewModel
-import tn.pdm.RecycleConnect.data.viewmodels.NewsViewModelFactory
 import tn.pdm.RecycleConnect.databinding.ActivityMainBinding
 import tn.pdm.RecycleConnect.ui.fragments.EventsFragment
 import tn.pdm.RecycleConnect.ui.fragments.MedicalRecordFragment
@@ -42,12 +40,9 @@ class MainActivity : AppCompatActivity() {
                     navigateTo(MainActivity::class.java)
                     true
                 }
-                R.id.navigation_article -> {
-                    // Handle Article item click
-                    true
-                }
-                R.id.navigation_events -> {
-                    changeFragment(EventsFragment(), "")
+
+                R.id.navigation_medication -> {
+                    changeFragment(MedicationFragment(), "")
                     true
                 }
                 R.id.navigation_profile -> {

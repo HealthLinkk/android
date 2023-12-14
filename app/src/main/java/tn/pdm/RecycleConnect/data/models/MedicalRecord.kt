@@ -4,7 +4,7 @@ package tn.pdm.RecycleConnect.data.models
 import java.util.Date
 
 data class MedicalRecord(
-    val _id: String?,
+    val _id: String? = null,
     val patient: String,
     val doctor: String,
     val diagnoses: List<String>,

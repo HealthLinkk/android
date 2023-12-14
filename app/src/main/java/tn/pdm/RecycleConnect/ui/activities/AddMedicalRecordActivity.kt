@@ -61,9 +61,8 @@ class AddMedicalRecordActivity : AppCompatActivity() {
             val medicalNotes = binding.editTextMedicalNotes.text.toString()
 
             val medicalRecord = MedicalRecord(
-                _id = "", // Leave it empty for now
-                patient = "", // Replace it with the patient's ID or name
-                doctor = "", // Replace it with the doctor's ID or name
+                patient = "654be4835b03eb51de9bb9d4", // Replace it with the patient's ID or name
+                doctor = "654be5b15b03eb51de9bb9db", // Replace it with the doctor's ID or name
                 diagnoses = emptyList(), // Add diagnoses if needed
                 immunizations = listOf(Immunization(immunizationName, parseDate(immunizationDate))),
                 allergies = listOf(Allergy(allergySubstance, allergyReaction, pinned)),

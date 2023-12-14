@@ -2,9 +2,9 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
 
-
-
 }
+
+
 buildscript {
     repositories {
         google()
@@ -12,12 +12,18 @@ buildscript {
     dependencies {
         val nav_version = "2.7.5"
         classpath("androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version")
+        classpath ("androidx.navigation:navigation-safe-args-gradle-plugin:2.7.4")
+
+
+
     }
 }
 
 android {
+
     namespace = "com.esprit.healthlink"
     compileSdk = 34
+
 
     defaultConfig {
         applicationId = "com.esprit.healthlink"
@@ -49,12 +55,17 @@ android {
         viewBinding = true
         dataBinding = true
     }
+    tasks.register<Wrapper>("wrapper") {
+        gradleVersion = "8.0"
+    }
+    tasks.register("prepareKotlinBuildScriptModel"){}
 
 
 
 }
 
 dependencies {
+
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")

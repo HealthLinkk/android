@@ -6,10 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.esprit.healthlink.data.adapter.DoctorAdapter
 import com.esprit.healthlink.data.model.Doctor
-import com.esprit.healthlink.data.model.Doctors
 import com.esprit.healthlink.data.model.UserRepository
-import com.esprit.healthlink.network.RetrofitClient
-import com.esprit.healthlink.network.UserApiEndPoint
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

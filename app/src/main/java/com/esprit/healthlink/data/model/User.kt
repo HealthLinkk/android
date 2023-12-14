@@ -1,5 +1,9 @@
 package com.esprit.healthlink.data.model
 
+import android.os.Parcel
+import android.os.Parcelable
+import java.io.Serializable
+
 data class Doctors(val doctors: List<Doctor>)
 
 
@@ -57,4 +61,5 @@ data class DiplomaVerification(
     val verificationDocument: String?, // Replace `String?` with the actual type of verificationDocument
     val specialization: List<String>
 )
+
 

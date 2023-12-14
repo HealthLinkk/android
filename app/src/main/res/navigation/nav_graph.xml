@@ -27,18 +27,34 @@
 
         tools:layout="@layout/fragment_doctors">
         <action
-            android:id="@+id/action_doctorsFragment_to_doctorDetailsFragment"
-            app:destination="@id/doctorDetailsFragment" />
+            android:id="@+id/action_to_DoctorDetails"
+            app:destination="@id/doctorDetailsFragment"
+         />
 
     </fragment>
+
+
+    <fragment
+        android:id="@+id/fragment_booking_appointment"
+        android:name="com.esprit.healthlink.ui.fragments.AppointmentBookingFragment"
+        android:label="Booking Appointment"
+        tools:layout="@layout/fragment_booking_appointment" />
+
+
+
 
     <fragment
         android:id="@+id/doctorDetailsFragment"
-        android:name="ui.fragments.DoctorDetailsFragment"
-        android:label="DoctorDetailsFragment">
+        android:name="com.esprit.healthlink.ui.fragments.DoctorDetailsFragment"
+        android:label="DoctorDetailsFragment"
+        tools:layout="@layout/fragment_doctor_details">
+        <argument
+            android:name="selectedDoctor"
+            app:argType="com.example.yourapp.Doctor" />
+    </fragment>
 
         <!-- Define any additional configuration for DoctorDetailsFragment -->
 
-    </fragment>
+
 
 </navigation>

@@ -11,6 +11,8 @@
     <color name="gray_900_99">#99242424</color>
     <color name="green_900">#224422</color>
     <color name="black_900_3f">#3f000000</color>
+    <color name="koyu_yesil">#009688</color>
+
     <color name="gray_50">#f4f8ff</color>
     <color name="background_gradient_end_color">#2C909A</color>
     <color name="background_gradient_start_color">#206971</color>

@@ -37,6 +37,7 @@ class AppointmentsActivity : AppCompatActivity() {
 
         binding.btnCompleted.setOnClickListener {
             showFragment(CompletedFragment())
+            showFragment(CompletedFragment())
         }
         binding.btnCanceled.setOnClickListener {
             showFragment(CanceledFragment())

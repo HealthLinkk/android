@@ -73,6 +73,21 @@
                 </LinearLayout>
 
             </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_28pxv"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/primary_button"
+                android:fontFamily="@font/dm_sans_medium"
+                android:text="Book"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+           />
+
         </LinearLayout>
 
 

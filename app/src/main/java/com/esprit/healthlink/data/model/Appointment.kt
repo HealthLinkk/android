@@ -22,7 +22,8 @@ data class Appointment(
     val title: String,
     val startDateTime : String,
     val type: AppointmentType,
-    val state: State
+    val state: State,
+    var isSelected: Boolean = false
 )
 
 

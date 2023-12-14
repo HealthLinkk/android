@@ -20,10 +20,10 @@ interface AppointmentApiEndPoint {
     @GET("/rdv/rendezvouss/scheduled")
     fun getScheduledRendezVous(): Call<List<Appointment>>
 
-    @GET("rdv/rendezvous/completed")
+    @GET("rdv/rendezvouss/completed")
     fun getCompletedRendezVous(): Call<List<Appointment>>
 
-    @GET("rdv/rendezvous/canceled")
+    @GET("rdv/rendezvouss/canceled")
     fun getCanceledRendezVous(): Call<List<Appointment>>
 
     @POST("rdv/")

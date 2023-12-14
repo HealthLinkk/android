@@ -4,10 +4,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.esprit.healthlink.data.model.Doctor
-import com.esprit.healthlink.data.model.Doctors
 import com.esprit.healthlink.databinding.ListDoctorsBinding
 
-class DoctorAdapter: RecyclerView.Adapter<DoctorAdapter.DoctorsHolder>() {
+class DoctorAdapter() : RecyclerView.Adapter<DoctorAdapter.DoctorsHolder>() {
     var items = ArrayList<Doctor>()
 
     fun setData(data : ArrayList<Doctor>){
@@ -27,7 +26,12 @@ class DoctorAdapter: RecyclerView.Adapter<DoctorAdapter.DoctorsHolder>() {
 
     override fun onBindViewHolder(holder: DoctorsHolder, position: Int) {
         holder.bind(items[position])
+
     }
+
+
+
+
 
     class DoctorsHolder(val binding: ListDoctorsBinding):RecyclerView.ViewHolder(binding.root){
 
@@ -37,5 +41,6 @@ class DoctorAdapter: RecyclerView.Adapter<DoctorAdapter.DoctorsHolder>() {
         }
 
     }
+
 
 }
